@@ -11,8 +11,9 @@ ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
-url = "http://py4e-data.dr-chuck.net/comments_694445.html"
+url = " http://www.py4e.com/code3/mbox.txt"
 html = urlopen(url, context=ctx).read()
+print(html)
 soup = BeautifulSoup(html, "html.parser")
 
 # Retrieve all of the anchor tags

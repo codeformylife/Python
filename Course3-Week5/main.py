@@ -8,17 +8,11 @@ ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 
-url = "http://py4e-data.dr-chuck.net/comments_694447.xml"
+url = " http://www.py4e.com/code3/mbox.txt"
 
 print('Retrieving', url)
 uh = urllib.request.urlopen(url, context=ctx)
 
 data = uh.read()
-print('Retrieved', len(data), 'characters')
+print(data)
 
-tree = ET.fromstring(data.decode())
-results =  tree.findall('.//count')#comments/comment/count
-sum = 0
-for item in results:
-    sum = sum + int(item.text)
-print(sum)
