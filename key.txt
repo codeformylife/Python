@@ -1,0 +1,2302 @@
+(T/F) When you add items to a dictionary they remain in the order in which you added them.
+A : False
+B : True
+<-ans-> A 
+<-question->
+A USB memory stick is an example of which of the following components of computer architecture?
+A : Central Processing Unit
+B : Main Memory
+C : Output Device
+D : Secondary Memory
+<-ans-> D 
+<-question->
+Assume the variable x has been initialized to an integer value (e.g., x = 3). What does the following statement do?
+
+x = x + 2
+A : Exit the program
+B : Increase the speed of the program by a factor of 2
+C : This would fail as it is a syntax error
+D : Retrieve the current value for x, add two to it, and put the sum back into x
+<-ans-> D 
+<-question->
+At the moment of creation of a new object, Python looks at the _________ definition to define the structure and capabilities of the newly created object.
+A : method
+B : cache
+C : constructor
+D : class
+E : instance
+<-ans-> D 
+<-question->
+For the following code,
+
+if x < 2 :
+ print('Below 2')
+elif x >= 2 :
+ print('Two or more')
+else :
+ print('Something else')
+
+What value of 'x' will cause 'Something else' to print out?
+A : x = 2.0
+B : x = 2
+C : x = -2
+D : This code will never print 'Something else' regardless of the value for 'x'
+<-ans-> D 
+<-question->
+For the following code:
+
+astr = 'Hello Bob'
+istr = 0
+try:
+ istr = int(astr)
+except:
+ istr = -1
+
+What will the value be for istr after this code executes?
+A : false
+B : -1
+C : It will be a random number depending on the operating system the program runs on
+D : It will be the 'Not a number' value (i.e. NaN)
+<-ans-> B 
+<-question->
+For the following list, how would you print out 'Sally'?
+
+friends = [ 'Joseph', 'Glenn', 'Sally' ]
+A : print(friends[2:1])
+B : print(friends['Sally'])
+C : print friends[3]
+D : print(friends[2])
+<-ans-> D 
+<-question->
+For the following Python code to work, what must be added to the title column in the CREATE TABLE statement for the Course table:
+
+cur.execute('''INSERT OR IGNORE INTO Course (title)
+ VALUES ( ? )''', ( title, ) )
+cur.execute('SELECT id FROM Course WHERE title = ? ', (title, ))
+course_id = cur.fetchone()[0]
+A : An AUTOINCREMENT indication
+B : A PRIMARY KEY indication
+C : A NOT NULL constraint
+D : A UNIQUE constraint
+<-ans-> D 
+<-question->
+For this XML Schema:
+
+<xs:complexType name="person">
+ <xs:sequence>
+ <xs:element name="lastname" type="xs:string"/>
+ <xs:element name="age" type="xs:integer"/>
+ <xs:element name="dateborn" type="xs:date"/>
+ </xs:sequence>
+</xs:complexType>
+
+And this XML,
+
+<person>
+ <lastname>Severance</lastname>
+ <Age>17</Age>
+ <dateborn>2001-04-17</dateborn>
+</person>
+
+Which tag is incorrect?
+A : dateborn
+B : lastname
+C : age
+D : Age
+E : person
+<-ans-> D 
+<-question->
+Given that Python lists and Python tuples are quite similar - when might you prefer to use a tuple over a list?
+A : For a list of items that will be extended as new items are found
+B : For a list of items that want to use strings as key values instead of integers
+C : For a temporary variable that you will use and discard without modifying
+D : For a list of items you intend to sort in place
+<-ans-> C 
+<-question->
+Given the architecture and terminology we introduced in Chapter 1, where are files stored?
+A : Motherboard
+B : Secondary memory
+C : Main Memory
+D : Central Processor
+<-ans-> B 
+<-question->
+Given the following line of text:
+
+From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008
+
+What would the regular expression '\S+?@\S+' match?
+A : d@uct.ac.za
+B : stephen.marquard@uct.ac.za
+C : \@\
+D : marquard@uct
+E : From
+<-ans-> B 
+<-question->
+How are "collection" variables different from normal variables?
+A : Collection variables merge streams of output into a single stream
+B : Collection variables pull multiple network documents together
+C : Collection variables can only store a single value
+D : Collection variables can store multiple values in a single variable
+<-ans-> D 
+<-question->
+How are Python dictionaries different from Python lists?
+A : Python dictionaries are a collection and lists are not a collection
+B : Python lists store multiple values and dictionaries store a single value
+C : Python lists can store strings and dictionaries can only store words
+D : Python lists maintain order and dictionaries do not maintain order
+E : Python lists are indexed using integers and dictionaries can use strings as indexes
+<-ans-> DE 
+<-question->
+How are strings stored internally in Python 3?
+A : bubble memory
+B : inverted
+C : EBCDIC
+D : Unicode
+E : UTF-16
+<-ans-> D 
+<-question->
+How are strings stored internally in Python 3?
+A : Byte Code
+B : ASCII
+C : Unicode
+D : UTF-8
+E : EBCDIC
+<-ans-> C 
+<-question->
+How are strings stored internally in Python 3?
+A : UTF-16
+B : Unicode
+C : ASCII
+D : Latin
+E : EBCDIC
+<-ans-> B 
+<-question->
+How do we model a many-to-many relationship between two database tables?
+A : We use the ARRAY column type in both of the tables
+B : We add 10 foreign keys to each table with names like artict_id_1, artist_id2, etc.
+C : We use a BLOB column in both tables
+D : We add a table with two foreign keys
+<-ans-> D 
+<-question->
+How is a Python socket different than a Python file handle?
+A : The socket does not read all of the data when it is opened
+B : Opening a socket will never fail, while opening a file can fail
+C : You can read and write using the same socket
+<-ans-> C 
+<-question->
+How many times will the body of the following loop be executed?
+
+n = 0
+while n > 0 :
+ print('Lather')
+ print('Rinse')
+print('Dry off!')
+A : 1
+B : 0
+C : 5
+D : This is an infinite loop
+<-ans-> B 
+<-question->
+How would you print out the following variable in all upper case in Python?
+
+greet = 'Hello Bob'
+A : print(greet.upper())
+B : print(upper(greet))
+C : int i=0;
+char c;
+while (greet[i]){
+ c=greet[i];
+ putchar(toupper(c));
+ i++;
+}
+D : puts(greet.ucase);
+<-ans-> A 
+<-question->
+How would you use string slicing [:] to print out 'uct' from the following string?
+
+x = 'From marquard@uct.ac.za'
+A : print(x[14/17])
+B : print(x[15:3])
+C : print(x[15:18])
+D : print(x[14:3])
+E : print(x[14:17])
+F : print(x[14+17])
+<-ans-> E 
+<-question->
+How would you use the index operator [] to print out the letter q from the following string?
+A : print(x[8])
+B : print(x[q])
+C : print(x[9])
+D : print(x[7])
+E : print x[-1]
+<-ans-> A 
+<-question->
+If our user interface (i.e., like iTunes) has repeated strings on one column of the user interface, how should we model this properly in a database?
+A : Make a table that maps the strings in the column to numbers and then use those numbers in the column
+B : Put the string in the last row where it occurs and put the number of that row in the column of all of the rest of the rows where the string occurs
+C : Encode the entire row as JSON and store it in a TEXT column in the database
+D : Put the string in the first row where it occurs and then put NULL in all of the other rows
+E : Put the string in the first row where it occurs and then put that row number in the column of all of the rest of the rows where the string occurs
+<-ans-> A 
+<-question->
+If the variable data is a Python list, how do we sort it in reverse order?
+A : data = data.sort(-1)
+B : data.sort(reverse=True)
+C : data.sort.reverse()
+D : data = sortrev(data)
+<-ans-> B 
+<-question->
+If we open a file as follows:
+
+xfile = open('mbox.txt')
+
+What statement would we use to read the file one line at a time?
+A : while line = xfile.gets
+B : for line in xfile:
+C : while ((line = xfile.readLine()) != null) {
+D : while (<xfile>) {
+<-ans-> B 
+<-question->
+If you were building an XML Schema and wanted to limit the values allowed in an xs:string field to only those in a particular list, what XML tag would you use in your XML Schema definition?
+A : maxOccurs
+B : xs:sequence
+C : xs:enumeration
+D : xs:complexType
+E : xs:element
+<-ans-> ...không phải A check lại test course 3 week 5 
+<-question->
+If you write a Python program to read a text file and you see extra blank lines in the output that are not present in the file input as shown below, what Python string function will likely solve the problem?
+
+From: stephen.marquard@uct.ac.za
+From: louis@media.berkeley.edu
+From: zqian@umich.edu
+From: rjlowe@iupui.edu
+...
+A : rstrip()
+B : find()
+C : startswith()
+D : ljust()
+<-ans-> A 
+<-question->
+In a client-server application on the web using sockets, which must come up first?
+A : server
+B : client
+C : it does not matter
+<-ans-> A 
+<-question->
+In a typical online production environment, who has direct access to the production database?
+A : Database Administrator
+B : UI/UX Designer
+C : Project Manager
+D : Developer
+<-ans-> A 
+<-question->
+In database terminology, another word for table is
+A : attribute
+B : row
+C : relation
+D : field
+<-ans-> C 
+<-question->
+In Object Oriented Programming, what is another name for the "attributes" of an object?
+A : fields
+B : messages
+C : methods
+D : forms
+E : portions
+<-ans-> A 
+<-question->
+In Python what is the input() feature best described as?
+A : A built-in function
+B : A reserved word
+C : A user-defined function
+D : The central processing unit
+<-ans-> A 
+<-question->
+In Python, how do you indicate the end of the block of code that makes up the function?
+A : You de-indent a line of code to the same indent level as the def keyword
+B : You put a # character at the end of the last line of the function
+C : You add the matching curly brace that was used to start the function }
+D : You put the "END" keyword in column 7 of the line which is to be the last line of the function
+<-ans-> A 
+<-question->
+In Python, what is a database "cursor" most like?
+A : A function
+B : A Python dictionary
+C : A file handle
+D : A method within a class
+<-ans-> C 
+<-question->
+In the following code (numbers added) - which will be the last line to execute successfully?
+
+(1) astr = 'Hello Bob'
+(2) istr = int(astr)
+(3) print('First', istr)
+(4) astr = '123'
+(5) istr = int(astr)
+(6) print('Second', istr)
+A : 3
+B : 2
+C : 1
+D : 6
+<-ans-> C 
+<-question->
+In the following code,
+
+print(98.6)
+
+What is "98.6"?
+A : A conditional statement
+B : An iteration / loop statement
+C : A constant
+D : A variable
+<-ans-> C 
+<-question->
+In the following code,
+
+x = 42
+
+What is "x"?
+A : A function
+B : A Central Processing Unit
+C : A constant
+D : A variable
+<-ans-> D 
+<-question->
+In the following code,
+x = 42
+What is "x"?
+A : A Central Processing Unit
+B : A function
+C : A constant
+D : A variable
+<-ans-> D 
+<-question->
+In the following example, an error occurs in "line3" that normally causes a traceback if it were not in a try/except.
+
+line1
+try:
+ line2
+ line3
+ line4
+except:
+ line5
+line6
+
+What is the sequence of lines executed in this program?
+A : line1, line4, line5, line6
+B : line1, line2, line3, line5, line6
+C : line1, line2, line3, line6
+D : line1, line5, line6
+E : line1, line2, line3, line4, line5, line6
+<-ans-> B 
+<-question->
+In the following Python code sequence (assuming cur is a SQLite cursor object),
+
+cur.execute('SELECT count FROM Counts WHERE org = ? ', (org, ))
+row = cur.fetchone()
+
+what is the value in row if no rows match the WHERE clause?
+A : None
+B : An empty list
+C : An empty dictionary
+D : -1
+<-ans-> A 
+<-question->
+In the following Python code, what will end up in the variable y?
+
+x = { 'chuck' : 1 , 'fred' : 42, 'jan': 100}
+y = x.items()
+A : A list of integers
+B : A tuple with three integers
+C : A list of strings
+D : A list of tuples
+<-ans-> D 
+<-question->
+In the following Python code, which of the following is an "argument" to a function?
+
+x = 'banana'
+y = max(x)
+print(y)
+A : print
+B : 'banana'
+C : max
+D : x
+<-ans-> D 
+<-question->
+In the following Python loop, why are there two iteration variables (k and v)?
+
+c = {'a':10, 'b':1, 'c':22}
+for k, v in c.items() :
+ ...
+A : Because there are two items in the dictionary
+B : Because the items() method in dictionaries returns a list of tuples
+C : Because for each item we want the previous and current key
+D : Because the keys for the dictionary are strings
+<-ans-> B 
+<-question->
+In the following Python, what does the for loop iterate through?
+
+x = dict()
+...
+for y in x :
+ ...
+A : It loops through the values in the dictionary
+B : It loops through the integers in the range from zero through the length of the dictionary
+C : It loops through all of the dictionaries in the program
+D : It loops through the keys in the dictionary
+<-ans-> D 
+<-question->
+In the following SQL,
+
+cur.execute('SELECT count FROM Counts WHERE org = ? ', (org, ))
+
+what is the purpose of the "?"?
+A : It is a syntax error
+B : It is a placeholder for the contents of the "org" variable
+C : It allows more than one boolean operation in the WHERE clause
+D : It is a search wildcard
+<-ans-> B 
+<-question->
+In the following XML, what is "type"?
+
+<person>
+ <name>Chuck</name>
+ <phone type="intl">
+ +1 734 303 4456
+ </phone>
+ <email hide="yes" />
+</person>
+A : Tag
+B : Simple element
+C : Value
+D : Complex element
+E : An attribute
+F : XML syntax error
+<-ans-> E 
+<-question->
+In the following XML, which are attributes?
+
+<person>
+ <name>Chuck</name>
+ <phone type="intl">
+ +1 734 303 4456
+ </phone>
+ <email hide="yes" />
+</person>
+A : type
+B : person
+C : name
+D : hide
+E : email
+<-ans-> AD 
+<-question->
+In the following XML, which node is the parent node of node e
+
+<a>
+ <b>X</b>
+ <c>
+ <d>Y</d>
+ <e>Z</e>
+ </c>
+</a>
+A : c
+B : e
+C : b
+D : a
+<-ans-> A 
+<-question->
+In this Python code, which line actually reads the data?
+
+import socket
+mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+mysock.connect(('data.pr4e.org', 80))
+cmd = 'GET http://data.pr4e.org/romeo.txt HTTP/1.0\n\n'.encode()
+mysock.send(cmd)
+while True:
+ data = mysock.recv(512)
+ if (len(data) < 1):
+ break
+ print(data.decode())
+mysock.close()
+A : mysock.recv()
+B : socket.socket()
+C : mysock.close()
+D : mysock.connect()
+E : mysock.send()
+<-ans-> A 
+<-question->
+In this Python code, which line is most like the open() call to read a file:
+
+import socket
+mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+mysock.connect(('data.pr4e.org', 80))
+cmd = 'GET http://data.pr4e.org/romeo.txt HTTP/1.0\n\n'.encode()
+mysock.send(cmd)
+while True:
+ data = mysock.recv(512)
+ if (len(data) < 1):
+ break
+ print(data.decode())
+mysock.close()
+A : mysock.connect()
+B : import socket
+C : mysock.recv()
+D : mysock.send()
+E : socket.socket()
+<-ans-> A 
+<-question->
+In this XML, which are the "complex elements"?
+
+<people>
+ <person>
+ <name>Chuck</name>
+ <phone>303 4456</phone>
+ </person>
+ <person>
+ <name>Noah</name>
+ <phone>622 7421</phone>
+ </person>
+</people>
+A : person
+B : Noah
+C : name
+D : people
+E : phone
+<-ans-> AD 
+<-question->
+In this XML, which are the "simple elements"?
+<people>
+ <person>
+ <name>Chuck</name>
+ <phone>303 4456</phone>
+ </person>
+ <person>
+ <name>Noah</name>
+ <phone>622 7421</phone>
+ </person>
+</people>
+A : phone
+B : person
+C : name
+D : Noah
+E : people
+<-ans-> AC 
+<-question->
+Looking at the following XML, what text value would we find at path "/a/c/e"
+
+<a>
+ <b>X</b>
+ <c>
+ <d>Y</d>
+ <e>Z</e>
+ </c>
+</a>
+A : Y
+B : b
+C : e
+D : Z
+E : a
+<-ans-> D 
+<-question->
+Python scripts (files) have names that end with:
+A : .py
+B : .png
+C : .exe
+D : .doc
+<-ans-> A 
+<-question->
+start of a function definition?
+A : def
+B : return
+C : continue
+D : rad
+<-ans-> A 
+<-question->
+Structured Query Language (SQL) is used to (check all that apply)
+A : Check Python code for errors
+B : Insert data
+C : Create a table
+D : Delete data
+<-ans-> BCD 
+<-question->
+The following code sequence fails with a traceback when the user enters a file that does not exist. How would you avoid the traceback and make it so you could print out your own error message when a bad file name was entered?
+
+fname = input('Enter the file name: ')
+fhand = open(fname)
+A : setjmp / longjmp
+B : try / except
+C : begin / rescue / end
+D : on error resume next
+<-ans-> B 
+<-question->
+The following Python code causes a traceback:
+
+a = "123"
+b = 456
+c = a + b
+print(c)
+
+Which line fails with a traceback?
+A : 3
+B : 1
+C : 2
+D : 4
+<-ans-> A 
+<-question->
+Using the following tuple, how would you print 'Wed'?
+
+days = ('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun')
+A : print(days{2})
+B : print(days[1])
+C : print(days[2])
+D : print(days.get(1,-1))
+E : print[days(2)]
+F : print(days(2))
+<-ans-> C 
+<-question->
+What are the Python keywords used to construct a loop to iterate through a list?
+A : foreach / in
+B : try / except
+C : for / in
+D : def / return
+<-ans-> C 
+<-question->
+What are the three parts of this URL (Uniform Resource Locator)?
+
+http://www.dr-chuck.com/page1.htm
+A : Protocol, host, and document
+B : Protocol, document, and offset
+C : Document, page, and protocol
+D : Page, offset, and count
+E : Host, offset, and page
+<-ans-> A 
+<-question->
+What character do you add to the "+" or "*" to indicate that the match is to be done in a non-greedy manner?
+A : $
+B : ^
+C : ?
+D : ++
+E : \g
+F : **
+<-ans-> C 
+<-question->
+What do we call it when a browser uses the HTTP protocol to load a file or page from a server and display it in the browser?
+A : The Request/Response Cycle
+B : DECNET
+C : Internet Protocol (IP)
+D : SMTP
+E : IMAP
+<-ans-> A 
+<-question->
+What do we do to a Python statement that is immediately after an if statement to indicate that the statement is to be executed only when the if statement is true?
+A : Begin the statement with a curly brace {
+B : Underline all of the conditional code
+C : Start the statement with a "#" character
+D : Indent the line below the if statement
+<-ans-> D 
+<-question->
+What do we use the second parameter of the open() call to indicate?
+A : What disk drive the file is stored on
+B : How large we expect the file to be
+C : Whether we want to read data from the file or write data to the file
+D : The list of folders to be searched to find the file we want to open
+<-ans-> C 
+<-question->
+What does the "[0-9]+" match in a regular expression?
+A : Any number of digits at the beginning of a line
+B : Several digits followed by a plus sign
+C : Zero or more digits
+D : One or more digits
+E : Any mathematical expression
+<-ans-> D 
+<-question->
+What does the "H" of HTTP stand for?
+A : HyperText
+B : Simple
+C : wHolsitic
+D : Manual
+E : Hyperspeed
+<-ans-> A 
+<-question->
+What does the "Z" mean in this representation of a time:
+
+2002-05-30T09:30:10Z
+A : This time is in the UTC timezone
+B : The hours value is in the range 0-12
+C : The local timezone for this time is New Zealand
+D : This time is Daylight Savings Time
+<-ans-> A 
+<-question->
+What does the break statement do?
+A : Resets the iteration variable to its initial value
+B : Exits the currently executing loop
+C : Exits the program
+D : Jumps to the "top" of the loop and starts the next iteration
+<-ans-> B 
+<-question->
+What does the continue statement do?
+A : Exits the program
+B : Jumps to the "top" of the loop and starts the next iteration
+C : Exits the currently executing loop
+D : Resets the iteration variable to its initial value
+<-ans-> B 
+<-question->
+What does the executescript() method in the Python SQLite cursor object do that the normal execute() method does not do?
+A : It allows embeded Python to be executed
+B : It allows multiple SQL statements separated by semicolons
+C : It allows database tables to be created
+D : It allows embedded JavaScript to be executed
+<-ans-> B 
+<-question->
+What does the following code print out?
+
+def thing():
+ print('Hello')
+print('There')
+A : There
+B : Hello
+There
+C : thing
+Hello
+There
+D : Hello
+<-ans-> A 
+<-question->
+What does the following code print out?
+print("123" + "abc")
+A : 123+abc
+B : This is a syntax error because you cannot add strings
+C : 123abc
+D : hello world
+<-ans-> C 
+<-question->
+What does the following Python code accomplish, assuming the c is a non-empty dictionary?
+
+tmp = list()
+for k, v in c.items() :
+ tmp.append( (v, k) )
+A : It creates a list of tuples where each tuple is a value, key pair
+B : It computes the average of all of the values in the dictionary
+C : It sorts the dictionary based on its key values
+D : It computes the largest of all of the values in the dictionary
+<-ans-> A 
+<-question->
+What does the following Python code do?
+
+fhand = open('mbox-short.txt')
+inp = fhand.read()
+A : Prompts the user for a file name
+B : Checks to see if the file exists and can be written
+C : Turns the text in the file into a graphic image like a PNG or JPG
+D : Reads the entire file into the variable inp as a string
+<-ans-> D 
+<-question->
+What does the following Python code print out?
+
+a = [1, 2, 3]
+b = [4, 5, 6]
+c = a + b
+print(len(c))
+A : 6
+B : [1, 2, 3, 4, 5, 6]
+C : 21
+D : [4, 5, 6]
+E : 15
+F : [1, 2, 3]
+<-ans-> A 
+<-question->
+What does the following Python code print out?
+
+print(len('banana')*7)
+A : -1
+B : banana7
+C : banana banana banana banana banana banana banana
+D : 42
+<-ans-> D 
+<-question->
+What does the following Python code print out?
+
+stuff = ['joseph', 'sally', 'walter', 'tim']
+print(stuff[2])
+A : tim
+B : walter
+C : joseph
+D : sally
+<-ans-> B 
+<-question->
+What does the following Python code print out? (Note that this is a bit of a trick question and the code has what many would consider to be a flaw/bug - so read carefully).
+
+def addtwo(a, b):
+ added = a + b
+ return a
+x = addtwo(2, 7)
+print(x)
+A : 2
+B : 9
+C : 7
+D : 14
+<-ans-> A 
+<-question->
+What does the following Python Program print out?
+
+str1 = "Hello"
+str2 = 'there'
+bob = str1 + str2
+print(bob)
+A : Hello
+
+there
+B : Hello
+C : 0
+D : Hellothere
+<-ans-> D 
+<-question->
+What does the following Python program print out?
+
+tot = 0 
+for i in [5, 4, 3, 2, 1] :
+ tot = tot + 1
+print(tot)
+A : 10
+B : 5
+C : 15
+D : 0
+<-ans-> B 
+<-question->
+What does the following Python program print out?
+
+x = '40'
+y = int(x) + 2
+print(y)
+A : int402
+B : 402
+C : x2
+D : 42
+<-ans-> D 
+<-question->
+What does the following Python sequence print out?
+
+x = 'From: Using the : character'
+y = re.findall('^F.+:', x)
+print(y)
+A : From:
+B : ^F.+:
+C : ['From: Using the :']
+D : :
+E : ['From:']
+<-ans-> C 
+<-question->
+What does the LIMIT clause in the following SQL accomplish?
+
+SELECT org, count FROM Counts 
+ ORDER BY count DESC LIMIT 10
+A : It only retrieves the first 10 rows from the table
+B : It only sorts on the first 10 characters of the column
+C : It reverses the sort order if there are more than 10 rows
+D : It avoids reading data from any table other than Counts
+<-ans-> A 
+<-question->
+What does the Python dir() function show when we pass an object into it as a parameter?
+A : It shows the methods and attributes of the object
+B : It shows the number of parameters to the constructor
+C : It shows the type of the object
+D : It shows the parent class
+<-ans-> A 
+<-question->
+What does the Python input() function do?
+A : Pause the program and read data from the user
+B : Connect to the network and retrieve a web page.
+C : Read the memory of the running program
+D : Take a screen shot from an area of the screen
+<-ans-> A 
+<-question->
+What does this Python statement do if PartyAnimal is a class?
+
+ zap = PartyAnimal()
+A : Copy the value from the PartyAnimal variable to the variable zap
+B : Clear out all the data in the PartyAnimal variable and put the old values for the data in zap
+C : Use the PartyAnimal template to make a new object and assign it to zap
+D : Subtract the value of the zap variable from the value in the PartyAnimal variable and put the difference in zap
+<-ans-> C 
+<-question->
+What does this SQL command do?
+
+SELECT COUNT(*) FROM Users
+
+Hint: This is not from the lecture
+A : It adds a COUNT column to the Users table
+B : It counts the rows in the table Users
+C : It is a syntax errror
+D : It only retrieves the rows of Users if there are at least two rows
+<-ans-> B 
+<-question->
+What ends up in the "x" variable in the following code:
+
+html = urllib.request.urlopen(url).read()
+soup = BeautifulSoup(html, 'html.parser')
+x = soup('a')
+A : A list of all the anchor tags (<a..) in the HTML from the URL
+B : True if there were any anchor tags in the HTML from the URL
+C : All of the externally linked CSS files in the HTML from the URL
+D : All of the paragraphs of the HTML from the URL
+<-ans-> A 
+<-question->
+What happens if a DELETE command is run on a table without a WHERE clause?
+A : All the rows without a primary key will be deleted
+B : It is a syntax error
+C : All the rows in the table are deleted
+D : The first row of the table will be deleted
+<-ans-> C 
+<-question->
+What happens when you exceed the Google geocoding API rate limit?
+A : You cannot use the API for 24 hours
+B : Your application starts to perform very slowly
+C : You canot use the API until you respond to an email that contains a survey question
+D : The API starts to perform very slowly
+<-ans-> A 
+<-question->
+What happens when you JOIN two tables together without an ON clause?
+A : The rows of the left table are connected to the rows in the right table when their primary key matches
+B : You get no rows at all
+C : Leaving out the ON clause when joining two tables in SQLite is a syntax error
+D : You get all of the rows of the left table in the JOIN and NULLs in all of the columns of the right table
+E : The number of rows you get is the number of rows in the first table times the number of rows in the second table
+<-ans-> E 
+<-question->
+What header does Twitter use to tell you how many more API requests you can make before you will be rate limited?
+A : x-request-count-down
+B : x-rate-limit-remaining
+C : content-type
+D : x-max-requests
+<-ans-> B 
+<-question->
+What is "code" in the context of this course?
+A : A set of rules that govern the style of programs
+B : A way to encrypt data during World War II
+C : A password we use to unlock Python features
+D : A sequence of instructions in a programming language
+<-ans-> D 
+<-question->
+What is "self" typically used for in a Python method within a class?
+A : To terminate a loop
+B : To refer to the instance in which the method is being called
+C : The number of parameters to the method
+D : To set the residual value in an expression where the method is used
+<-ans-> B 
+<-question->
+What is "self" typically used in a Python method within a class?
+A : The number of parameters to the method
+B : To terminate a loop
+C : To refer to the instance in which the method is being called
+D : To set the residual value in an expression where the method is used
+<-ans-> C 
+<-question->
+What is "serialization" when we are talking about web services?
+A : Marking each network packet so it can be put back into order on the receiving system
+B : Making it so that dictionaries can maintain their keys in sorted order
+C : Sorting all the data stored in a tuple
+D : The act of taking data stored in a program and formatting it so it can be sent across the network
+<-ans-> D 
+<-question->
+What is a common use of Python dictionaries in a program?
+A : Splitting a line of input into words using a space as a delimiter
+B : Computing an average of a set of numbers
+C : Building a histogram counting the occurrences of various strings in a file
+D : Sorting a list of names into alphabetical order
+<-ans-> C 
+<-question->
+What is a good description of the following bit of Python code?
+
+zork = 0
+for thing in [9, 41, 12, 3, 74, 15] :
+ zork = zork + thing
+print('After', zork)
+A : Count all of the elements in a list
+B : Sum all the elements of a list
+C : Find the smallest item in a list
+D : Find the largest item in a list
+<-ans-> B 
+<-question->
+What is a good statement to describe the is operator as used in the following if statement:
+
+if smallest is None :
+ smallest = value
+A : Looks up 'None' in the smallest variable if it is a string
+B : Is true if the smallest variable has a value of -1
+C : matches both type and value
+D : The if statement is a syntax error
+<-ans-> C 
+<-question->
+What is a good time zone to use when computers are exchanging data over APIs?
+A : Universal Time / GMT
+B : The local time zone of the sending computer
+C : The local time zone of the receiving computer
+D : The local time zone of the sending computer without daylight savings time
+<-ans-> A 
+<-question->
+What is a term commonly used to describe the Python dictionary feature in other programming languages?
+A : Lambdas
+B : Associative arrays
+C : Closures
+D : Sequences
+<-ans-> B 
+<-question->
+What is an important aspect of an Application Layer protocol like HTTP?
+A : How much memory does the server need to serve requests?
+B : Which application talks first? The client or server?
+C : How long do we wait before packets are retransmitted?
+D : What is the IP address for a domain like www.dr-chuck.com?
+<-ans-> B 
+<-question->
+What is stored in a "file handle" that is returned from a successful open() call?
+A : The handle contains the first 10 lines of a file
+B : The handle is a connection to the file's data
+C : The handle has a list of all of the files in a particular folder on the hard drive
+D : All the data from the file is read into memory and stored in the handle
+<-ans-> B 
+<-question->
+What is the "wild card" character in a regular expression (i.e., the character that matches any character)?
+A : *
+B : $
+C : .
+D : ?
+E : ^
+F : +
+<-ans-> C 
+<-question->
+What is the ASCII character that is associated with the decimal value 42?
+A : W
+B : *
+C : 0
+D : w
+E : Newline
+<-ans-> B 
+<-question->
+What is the best way to think about a "Syntax Error" while programming?
+A : The computer is overheating and just wants you to stop to let it cool down
+B : The computer has used GPS to find your location and hates everyone from your town
+C : The computer did not understand the statement that you entered
+D : The computer needs to have its software upgraded
+<-ans-> C 
+<-question->
+What is the decimal (Base-10) numeric value for the upper case letter "G" in the ASCII character set?
+A : 71
+B : 7
+C : 103
+D : 25073
+E : 14
+<-ans-> A 
+<-question->
+What is the decimal (Base-10) numeric value for the upper case letter "G" in the ASCII character set?
+A : 71
+B : 17
+C : 1771
+D : 2048
+E : 7
+<-ans-> A 
+<-question->
+What is the decimal (Base-10) numeric value for the upper case letter "G" in the ASCII character set?
+A : 256
+B : 71
+C : 17
+D : 7
+E : 142
+<-ans-> B 
+<-question->
+What is the difference between a Python tuple and Python list?
+A : Lists are indexed by integers and tuples are indexed by strings
+B : Lists are mutable and tuples are not mutable
+C : Tuples can be expanded after they are created and lists cannot
+D : Lists maintain the order of the items and tuples do not maintain order
+<-ans-> B 
+<-question->
+What is the difference between the "+" and "*" character in regular expressions?
+A : The "+" matches at least one character and the "*" matches zero or more characters
+B : The "+" matches upper case characters and the "*" matches lowercase characters
+C : The "+" matches the beginning of a line and the "*" matches the end of a line
+D : The "+" matches the actual plus character and the "*" matches any character
+E : The "+" indicates "start of extraction" and the "*" indicates the "end of extraction"
+<-ans-> A 
+<-question->
+What is the iteration variable in the following Python code:
+
+friends = ['Joseph', 'Glenn', 'Sally']
+for friend in friends :
+ print('Happy New Year:', friend)
+print('Done!')
+A : friend
+B : Glenn
+C : Sally
+D : friends
+<-ans-> A 
+<-question->
+What is the iteration variable in the following Python code?
+
+for letter in 'banana' :
+ print(letter)
+A : print
+B : for
+C : letter
+D : in
+E : 'banana'
+<-ans-> C 
+<-question->
+What is the label we give to a column that is an integer and used to point to a row in a different table?
+A : Foreign key
+B : Local key
+C : Primary key
+D : Logical key
+E : Remote key
+<-ans-> A 
+<-question->
+What is the method to cause Python to parse XML that is stored in a string?
+A : fromstring()
+B : parse()
+C : readall()
+D : extract()
+E : xpath()
+<-ans-> A 
+<-question->
+What is the method used to parse a string containing JSON data so that you can work with the data in Python?
+A : json.loads()
+B : json.connect()
+C : json.read()
+D : json.parse()
+<-ans-> A 
+<-question->
+What is the most common Unicode encoding when moving data between systems?
+A : UTF-32
+B : UTF-16
+C : UTF-128
+D : UTF-64
+E : UTF-8
+<-ans-> E 
+<-question->
+What is the most common Unicode encoding when moving data between systems?
+A : UTF-64
+B : UTF-32
+C : UTF-16
+D : UTF-8
+E : UTF-128
+<-ans-> D 
+<-question->
+What is the most common Unicode encoding when moving data between systems?
+A : UTF-128
+B : UTF-16
+C : UTF-64
+D : UTF-32
+E : UTF-8
+<-ans-> E 
+<-question->
+What is the most important benefit of writing your own functions?
+A : Following the rule that no function can have more than 10 statements in it
+B : Following the rule that whenever a program is more than 10 lines you must use a function
+C : Avoiding writing the same non-trivial code more than once in your program
+D : To avoid having more than 10 lines of sequential code without an indent or de-indent
+<-ans-> C 
+<-question->
+What is the name of the Python 2.x library to parse XML data?
+A : xml2
+B : xml.etree.ElementTree
+C : xml.json
+D : xml-misc
+<-ans-> B 
+<-question->
+What is the primary added value of relational databases over flat files?
+A : Ability to execute JavaScript in the file
+B : Ability to execute Python code within the file
+C : Ability to scan large amounts of data quickly
+D : Ability to store data in a format that can be sent across a network
+E : Ability to quickly convert data to HTML
+<-ans-> C 
+<-question->
+What is the primary use of the Python dictionary?
+A : To insure that all Python reserved words are properly spelled
+B : To store key / value pairs
+C : To look up all of the methods which are available on a Python object
+D : To make sure that the definitions of the Python reserved words are available in different languages (French, Spanish, etc)
+<-ans-> B 
+<-question->
+What is the proper way to say "good-bye" to Python?
+A : while
+B : quit()
+C : #EXIT
+D : // stop
+<-ans-> B 
+<-question->
+What is the purpose of "OR IGNORE" in the following SQL:
+
+INSERT OR IGNORE INTO Course (title) VALUES ( ? )
+A : It makes sure that if a particular title is already in the table, there are no duplicate rows inserted
+B : It ignores errors in the SQL syntax for the statement
+C : It updates the created_at value if the title already exists in the table
+D : It ignores any foreign key constraint errors
+<-ans-> A 
+<-question->
+What is the purpose of a primary key?
+A : To look up a particular row in a table very quickly
+B : To look up a row based on a string that comes from outside the program
+C : To point to a particular row in another table
+D : To track the number of duplicate values in another column
+<-ans-> A 
+<-question->
+What is the purpose of the BeautifulSoup Python library?
+A : It optimizes files that are retrieved many times
+B : It animates web operations to make them more attractive
+C : It builds word clouds from web pages
+D : It repairs and parses HTML to make it easier for a program to understand
+E : It allows a web site to choose an attractive skin
+<-ans-> D 
+<-question->
+What is the purpose of the following Python code?
+
+fhand = open('mbox.txt')
+x = 0
+for line in fhand:
+ x = x + 1
+print(x)
+A : Reverse the order of the lines in mbox.txt
+B : Convert the lines in mbox.txt to lower case
+C : Remove the leading and trailing spaces from each line in mbox.txt
+D : Count the lines in the file 'mbox.txt'
+<-ans-> D 
+<-question->
+What is the purpose of the newline character in text files?
+A : It adds a new network connection to retrieve files from the network
+B : It indicates the end of one line of text and the beginning of another line oftext
+C : It enables random movement throughout the file
+D : It allows us to open more than one files and read them in a synchronized manner
+<-ans-> B 
+<-question->
+What is the purpose of the newline character in text files?
+A : It indicates the end of one line of text and the beginning of another line of text
+B : It enables random movement throughout the file
+C : It adds a new network connection to retrieve files from the network
+D : It allows us to open more than one files and read them in a synchronized manner
+<-ans-> A 
+<-question->
+What is the purpose of the second parameter of the get() method for Python dictionaries?
+A : An alternate key to use if the first key cannot be found
+B : To provide a default value if the key is not found
+C : The key to retrieve
+D : The value to retrieve
+<-ans-> B 
+<-question->
+What is the purpose of XML Schema?
+A : A Python program to tranform XML files
+B : To establish a contract as to what is valid XML
+C : To transfer XML data reliably during network outages
+D : To compute SHA1 checksums on data to make sure it is not modified in transit
+<-ans-> B 
+<-question->
+What is the Python reserved word that we use in two-way if tests to indicate the block of code that is to be executed if the logical test is false?
+A : iterate
+B : otherwise
+C : A closing curly brace followed by an open curly brace like this }{
+D : else
+<-ans-> D 
+<-question->
+What is the SQL keyword that reconnects rows that have foreign keys with the corresponding data in the table that the foreign key points to?
+A : APPEND
+B : CONSTRAINT
+C : JOIN
+D : CONNECT
+E : COUNT
+<-ans-> C 
+<-question->
+What is the syntax to look up the fullname attribute in an object stored in the variable colleen?
+A : colleen::fullname
+B : colleen.fullname
+C : colleen['fullname']
+D : colleen->fullname
+<-ans-> B 
+<-question->
+What is the type of the return value of the re.findall() method?
+A : A single character
+B : A list of strings
+C : A string
+D : An integer
+E : A boolean
+<-ans-> B 
+<-question->
+What is the value of the following expression
+
+42 % 10
+
+Hint - the "%" is the remainder operator
+A : 4210
+B : 10
+C : 0.42
+D : 2
+<-ans-> D 
+<-question->
+What is true about the following code segment:
+
+if x == 5 :
+ print('Is 5')
+ print('Is Still 5')
+ print('Third 5')
+A : Depending on the value of x, either all three of the print statements will execute or none of the statements will execute
+B : The string 'Is 5' will always print out regardless of the value for x.
+C : The string 'Is 5' will never print out regardless of the value for x.
+D : Only two of the three print statements will print out if the value of x is less than zero.
+<-ans-> A 
+<-question->
+What is wrong with this Python loop:
+
+n = 5
+while n > 0 :
+ print(n)
+print('All done')
+A : This loop will run forever
+B : The print('All done') statement should be indented four spaces
+C : There should be no colon on the while statement
+D : while is not a Python reserved word
+<-ans-> A 
+<-question->
+What keyword is used to indicate the start of a method in a Python class?
+A : def
+B : function
+C : continue
+D : break
+<-ans-> A 
+<-question->
+What kind of variable will you get in Python when the following JSON is parsed:
+
+[ "Glenn", "Sally", "Jen" ]
+A : A list with three items
+B : A dictionary with three key / value pairs
+C : A dictionary with one key / value pair
+D : Three tuples
+E : One Tuple
+<-ans-> A 
+<-question->
+What kind of variable will you get in Python when the following JSON is parsed:
+{ "id" : "001",
+ "x" : "2",
+ "name" : "Chuck"
+}
+A : A list with three items
+B : A tuple with three items
+C : A list of tuples
+D : A dictionary with three key / value pairs
+E : A list with six items
+<-ans-> D 
+<-question->
+What library call do you make to append properly encoded parameters to the end of a URL like the following:
+
+http://maps.googleapis.com/maps/api/geocode/json?sensor=false&address=Ann+Arbor%
+2C+MI
+A : urllib.parse.urlencode()
+B : re.match()
+C : re.encode()
+D : urllib.urlcat()
+<-ans-> A 
+<-question->
+What list method adds a new item to the end of an existing list?
+A : forward()
+B : index()
+C : push()
+D : pop()
+E : append()
+F : add()
+<-ans-> E 
+<-question->
+What method do you call in an SQLIte cursor object in Python to run an SQL command?
+A : socket()
+B : run()
+C : execute()
+D : send()
+<-ans-> C 
+<-question->
+What must you do in Python before opening a socket?
+A : _socket = true
+B : import socket
+C : import tcp
+D : import tcp-socket
+E : open socket
+<-ans-> B 
+<-question->
+What protocol does Twitter use to protect its API?
+A : Java Web Tokens
+B : WS*Security
+C : PKI-HMAC
+D : SHA1-MD5
+E : SOAP
+F : OAuth
+<-ans-> F 
+<-question->
+What Python function would you use if you wanted to prompt the user for a file name to open?
+A : read()
+B : input()
+C : file_input()
+D : cin
+<-ans-> B 
+<-question->
+What Python library do you have to import to parse and handle JSON?
+A : import re
+B : ElementTree
+C : BeautifulSoup
+D : import json
+<-ans-> D 
+<-question->
+What separates the HTTP headers from the body of the HTTP document?
+A : X-End-Header: true
+B : A less-than sign indicating the start of an HTML tag
+C : A blank line
+D : Four dashes
+<-ans-> C 
+<-question->
+What should you check before scraping a web site?
+A : That the web site only has links within the same site
+B : That the web site returns HTML for all pages
+C : That the web site allows scraping
+D : That the web site supports the HTTP GET command
+<-ans-> C 
+<-question->
+What SQLite keyword is added to primary keys in a CREATE TABLE statement to indicate that the database is to provide a value for the column when records are inserted?
+A : AUTOINCREMENT
+B : INSERT_AUTO_PROVIDE
+C : ASSERT_UNIQUE
+D : AUTO_INCREMENT
+<-ans-> A 
+<-question->
+What type of data is produced when you call the range() function?
+
+x = list(range(5))
+A : A string
+B : A boolean (true/false) value
+C : A list of characters
+D : A list of words
+E : A list of integers
+<-ans-> E 
+<-question->
+What will be the value of x after the following statement executes:
+
+x = 1 + 2 * 3 - 8 / 4
+A : 8
+B : 5.0
+C : 2.0
+D : 4
+<-ans-> B 
+<-question->
+What will be the value of x when the following statement is executed:
+
+x = int(98.6)
+A : 100
+B : 99
+C : 6
+D : 98
+<-ans-> D 
+<-question->
+What will end up in the variable y after this code is executed?
+
+x , y = 3, 4
+A : 4
+B : A two item tuple
+C : A dictionary with the key 3 mapped to the value 4
+D : 3
+E : A two item list
+<-ans-> A 
+<-question->
+What will the '\$' regular expression match?
+A : A dollar sign
+B : An empty line
+C : The beginning of a line
+D : A new line at the end of a line
+E : The end of a line
+<-ans-> A 
+<-question->
+What will the following code print out?
+
+smallest_so_far = -1
+for the_num in [9, 41, 12, 3, 74, 15] :
+ if the_num < smallest_so_far :
+ smallest_so_far = the_num
+print(smallest_so_far)
+
+Hint: This is a trick question and most would say this code has a bug - so read carefully
+A : -1
+B : 74
+C : 42
+D : 3
+<-ans-> A 
+<-question->
+What will the following code print out?
+
+x = 0
+if x < 2 :
+ print('Small')
+elif x < 10 :
+ print('Medium')
+else :
+ print('LARGE')
+print('All done')
+A : Small
+Medium
+LARGE
+All done
+B : Small
+All done
+C : Small
+D : LARGE
+All done
+<-ans-> B 
+<-question->
+What will the following program print out:
+
+>>> x = 15
+>>> x = x + 5
+>>> print(x)
+A : 20
+B : 5
+C : 15
+D : "print x"
+E : x + 5
+<-ans-> A 
+<-question->
+What will the following Python code print out?
+
+data = 'From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008'
+pos = data.find('.')
+print(data[pos:pos+3])
+A : uct
+B : .ma
+C : Sat
+D : mar
+<-ans-> B 
+<-question->
+What will the following Python code print out?
+
+def func(x) :
+ print(x)
+func(10)
+func(20)
+A : 10
+20
+B : x
+20
+C : x
+10
+x
+20
+D : func
+func
+<-ans-> A 
+<-question->
+What will the following Python code print out?
+
+friends = [ 'Joseph', 'Glenn', 'Sally' ]
+friends.sort()
+print(friends[0])
+A : Glenn
+B : Sally
+C : Joseph
+D : friends
+<-ans-> A 
+<-question->
+What will the following Python program print out?
+
+def fred():
+ print("Zap")
+def jane():
+ print("ABC")
+jane()
+fred()
+jane()
+A : Zap Zap Zap
+B : ABC Zap jane
+C : ABC Zap ABC
+D : Zap ABC Zap
+E : Zap ABC jane fred jane
+<-ans-> C 
+<-question->
+What will the following Python program print out?
+
+def greet(lang):
+ if lang == 'es':
+ return 'Hola'
+ elif lang == 'fr':
+ return 'Bonjour'
+ else:
+ return 'Hello'
+print(greet('fr'),'Michael')
+A : Bonjour Michael
+B : def Michael
+C : Hello Michael
+D : Hola
+Bonjour
+Hello
+<-ans-> A 
+<-question->
+What will the following Python program print out?
+
+total = 0
+for abc in range(5):
+ total = total + abc
+print(total)
+A : 4
+B : 5
+C : 16
+D : 6
+E : 10
+<-ans-> E 
+<-question->
+What will the following Python program print out?
+
+x = -1
+for value in [3, 41, 12, 9, 74, 15] :
+ if value > x :
+ x = value
+print(x)
+A : 74
+B : 3
+C : 15
+D : -1
+E : 9
+<-ans-> A 
+<-question->
+What will the following Python program print out? (This is a bit tricky so look carefully).
+
+def hello():
+ print("Hello")
+ print("There")
+x = 10
+x = x + 1
+A : Nothing will print
+B : x = 11
+C : 11
+D : Hello
+
+There
+
+11
+<-ans-> A 
+<-question->
+What word does the following sequence of numbers represent in ASCII:
+
+108, 105, 110, 101
+A : lost
+B : ping
+C : func
+D : tree
+E : line
+<-ans-> E 
+<-question->
+What word does the following sequence of numbers represent in ASCII:
+
+108, 105, 115, 116
+A : first
+B : list
+C : mist
+D : dict
+E : webs
+<-ans-> B 
+<-question->
+What word does the following sequence of numbers represent in ASCII:
+
+108, 105, 115, 116
+A : list
+B : http
+C : lost
+D : fuss
+E : open
+<-ans-> A 
+<-question->
+What would the following mean in a regular expression? [a-z0-9]
+A : Match anything but a lowercase letter or digit
+B : Match any text that is surrounded by square braces
+C : Match a lowercase letter or a digit
+D : Match any number of lowercase letters followed by any number of digits
+E : Match an entire line as long as it is lowercase letters or digits
+<-ans-> C 
+<-question->
+What would the following Python code print out?
+
+abc = "With three words"
+stuff = abc.split()
+print(len(stuff))
+A : 1
+B : 14
+C : 16
+D : 3
+E : 2
+<-ans-> D 
+<-question->
+What would the following Python code print out?
+
+abc = "With three words"
+stuff = abc.split()
+print(stuff)
+A : ['w', 'i', 't', 'h']
+B : ['With the', 'ee words']
+C : ['With', 'three words']
+D : ['With', 'three', 'words']
+E : ['With three words']
+<-ans-> D 
+<-question->
+What would the following Python code print out?
+
+fruit = 'Banana'
+fruit[0] = 'b'
+print(fruit)
+A : B
+B : [0]
+C : banana
+D : Banana
+E : Nothing would print - the program fails with a traceback error
+F : b
+<-ans-> E 
+<-question->
+What would the following Python code print out?
+
+stuff = dict()
+print(stuff.get('candy',-1))
+A : -1
+B : 0
+C : The program would fail with a traceback
+D : 'candy'
+<-ans-> A 
+<-question->
+What would the following Python code print out?
+
+stuff = dict()
+print(stuff['candy'])
+A : -1
+B : candy
+C : 0
+D : The program would fail with a traceback
+<-ans-> D 
+<-question->
+What would the following Python code sequence print out?
+
+zap = "hello there bob"
+print(zap[4])
+A : zap
+B : e
+C : l
+D : You would get an out-of-range error and the program would fail
+E : hello
+F : o
+<-ans-> F 
+<-question->
+When Python is running in the interactive mode and displaying the chevron prompt (>>>) - what question is Python asking you?
+A : What Python script would you like me to run?
+B : What is your favourite color?
+C : What Python statement would you like me to run?
+D : What is the next machine language instruction to run?
+E : What would you like to do?
+<-ans-> CE 
+<-question->
+When reading data across the network (i.e. from a URL) in Python 3, what method must be used to convert it to the internal format used by strings?
+A : split()
+B : decode()
+C : internal()
+D : rstrip()
+E : encode()
+<-ans-> B 
+<-question->
+When reading data across the network (i.e. from a URL) in Python 3, what method must be used to convert it to the internal format used by strings?
+A : upper()
+B : encode()
+C : decode()
+D : trim()
+E : find()
+<-ans-> C 
+<-question->
+When reading data across the network (i.e. from a URL) in Python 3, what method must be used to convert it to the internal format used by strings? 
+A : decode()
+B : encode()
+C : convert()
+D : more()
+E : msub()
+<-ans-> A 
+<-question->
+When you are doing a SELECT with a JOIN across multiple tables with identical column names, how do you distinguish the column names?
+A : tablename['columnname']
+B : tablename/columnname
+C : tablename.columnname
+D : tablename->columnname
+<-ans-> C 
+<-question->
+When you click on an anchor tag in a web page like below, what HTTP request is sent to the server?
+
+<p>Please click <a href="page1.htm">here</a>.</p>
+A : GET
+B : POST
+C : PUT
+D : DELETE
+E : INFO
+<-ans-> A 
+<-question->
+When you have multiple lines in an if block, how do you indicate the end of the if block?
+A : You de-indent the next line past the if block to the same level of indent as the original if statement
+B : You omit the semicolon ; on the last line of the if block
+C : You put the colon : character on a line by itself to indicate we are done with the if block
+D : You use a curly brace { after the last line of the if block
+<-ans-> A 
+<-question->
+Where in the computer is a variable such as "X" stored?
+
+x = 123
+A : Main Memory
+B : Central processing unit
+C : Input Devices
+D : Output Devices
+E : Secondary Memory
+<-ans-> A 
+<-question->
+Which came first, the instance or the class?
+A : class
+B : method
+C : instance
+D : function
+<-ans-> A 
+<-question->
+Which command is used to retrieve all records from a table?
+A : RETRIEVE * FROM Users
+B : SELECT all FROM Users
+C : SELECT * FROM Users
+D : RETRIEVE all FROM User
+<-ans-> C 
+<-question->
+Which HTTP header tells the browser the kind of document that is being returned?
+A : Document-Type:
+B : HTML-Document:
+C : Metadata:
+D : ETag:
+E : Content-Type:
+<-ans-> E 
+<-question->
+Which keyword will cause the results of the query to be displayed in sorted order?
+A : GROUP BY
+B : ORDER BY
+C : WHERE
+D : None of these
+<-ans-> B 
+<-question->
+Which line of the following Python program will never execute?
+
+def stuff():
+ print('Hello')
+ return
+ print('World')
+stuff()
+A : stuff()
+B : print('Hello')
+C : return
+D : print ('World')
+E : def stuff():
+<-ans-> D 
+<-question->
+Which method in a dictionary object gives you a list of the values in the dictionary?
+A : all()
+B : keys()
+C : items()
+D : values()
+E : each()
+<-ans-> D 
+<-question->
+Which of the following are not commonly used serialization formats?
+A : Dictionaries
+B : JSON
+C : TCP
+D : HTTP
+E : XML
+<-ans-> ACD 
+<-question->
+Which of the following best describes "Regular Expressions"?
+A : The way Python handles and recovers from errors that would otherwise cause a traceback
+B : A way to solve Algebra formulas for the unknown value
+C : A small programming language unto itself
+D : A way to calculate mathematical values paying attention to operator precedence
+<-ans-> C 
+<-question->
+Which of the following commands would update a column named "name" in a table named "Users"?
+A : Users.name='new name' WHERE ...
+B : Users->name = 'new name' WHERE ...
+C : UPDATE Users SET name='new name' WHERE ...
+D : UPDATE Users (name) VALUES ('new name') WHERE ...
+<-ans-> C 
+<-question->
+Which of the following dates is in ISO8601 format?
+A : 2002-May-30
+B : May 30, 2002
+C : 05/30/2002
+D : 2002-05-30T09:30:10Z
+<-ans-> D 
+<-question->
+Which of the following elements of a mathematical expression in Python is evaluated first?
+A : Subtraction -
+B : Addition +
+C : Multiplication *
+D : Parentheses ( )
+<-ans-> D 
+<-question->
+Which of the following is a bad Python variable name?
+A : SPAM23
+B : Spam
+C : 23spam
+D : _spam
+E : #spam
+<-ans-> CE 
+<-question->
+Which of the following is a comment in Python?
+A : # This is a test
+B : * This is a test
+C : /* This is a test */
+D : // This is a test
+<-ans-> A 
+<-question->
+Which of the following is a web services approach used by the Twitter API?
+A : REST
+B : CORBA
+C : SOAP
+D : XML-RPC
+<-ans-> A 
+<-question->
+Which of the following is most like an open socket in an application?
+A : An "in-progress" phone conversation
+B : Fiber optic cables
+C : The wheels on an automobile
+D : The chain on a bicycle
+E : The ringer on a telephone
+<-ans-> A 
+<-question->
+Which of the following is most similar to a TCP port number?
+A : A street number in an address
+B : The GPS coordinates of a building
+C : The distance between two locations
+D : A telephone number
+E : A telephone extension
+<-ans-> E 
+<-question->
+Which of the following is NOT a good rule to follow when developing a database model?
+A : Use integers as primary keys
+B : Use a person's email address as their primary key
+C : Never repeat string data in more than one table in a data model
+D : Model each "object" in the application as one or more tables
+<-ans-> B 
+<-question->
+Which of the following is not a good synonym for "class" in Python?
+A : blueprint
+B : direction
+C : pattern
+D : template
+<-ans-> B 
+<-question->
+Which of the following is NOT a good synonym for "class" in Python?
+A : blueprint
+B : pattern
+C : direction
+D : template
+<-ans-> C 
+<-question->
+Which of the following is not a Python reserved word?
+A : speed
+B : else
+C : for
+D : if
+E : spam
+F : break
+G : continue
+H : iterate
+<-ans-> AEH 
+<-question->
+Which of the following is not a valid string method in Python?
+A : boldface()
+B : upper()
+C : lower()
+D : lstrip()
+E : startswith()
+F : join()
+G : upper()
+H : twist()
+<-ans-> AH 
+<-question->
+Which of the following is not one of the programming patterns covered in Chapter 1?
+A : Sequential Steps
+B : Repeated Steps
+C : Random steps
+D : Conditional Steps
+<-ans-> C 
+<-question->
+Which of the following is not true about the service-oriented approach?
+A : Standards are developed where many pairs of applications must work together
+B : An application runs together all in one place
+C : An application makes use of the services provided by other applications
+D : Web services and APIs are used to transfer data between applications
+<-ans-> B 
+<-question->
+Which of the following is rarely used in Object Oriented Programming?
+A : Destructor
+B : Attribute
+C : Method
+D : Constructor
+<-ans-> A 
+<-question->
+Which of the following is the database software used in this class?
+A : Postgres
+B : Oracle
+C : SQLite
+D : MySQL
+E : SQL Server
+<-ans-> C 
+<-question->
+Which of the following is the label we give a column that the "outside world" uses to look up a particular row?
+A : Foreign key
+B : Local key
+C : Remote key
+D : Primary key
+E : Logical key
+<-ans-> E 
+<-question->
+Which of the following is the way we match the "start of a line" in a regular expression?
+A : ^
+B : str.startswith()
+C : \linestart
+D : String.startsWith()
+E : variable[0:1]
+<-ans-> A 
+<-question->
+Which of the following lines of Python code contains a syntax error?
+
+1: x = 12
+2: if x < 5:
+3: print("smaller")
+4: else:
+5: print("bigger")
+6: print("all done")
+<-ans-> 3 (Hint: wrong indentation) 
+<-question->
+Which of the following lines of Python is equivalent to the following sequence of statements assuming that counts is a dictionary?
+
+if key in counts:
+ counts[key] = counts[key] + 1
+else:
+ counts[key] = 1
+A : counts[key] = counts.get(key,0) + 1
+B : counts[key] = (counts[key] * 1) + 1
+C : counts[key] = counts.get(key,-1) + 1
+D : counts[key] = (key in counts) + 1
+E : counts[key] = key + 1
+<-ans-> A 
+<-question->
+Which of the following lines will never print out regardless of the value for x?
+
+if x < 2 :
+ print("Below 2")
+elif x < 20 :
+ print("Below 20")
+elif x < 10 :
+ print("Below 10")
+else :
+ print("Something else")
+A : Below 10
+B : Below 20
+C : Something else
+D : Below 2
+<-ans-> A 
+<-question->
+Which of the following lines will never print out regardless of the value of "x"?
+
+if x < 2 :
+ print("Below 2")
+elif x < 0 :
+ print("Negative")
+else :
+ print("Something else")
+A : Below 2
+B : All the lines will print out
+C : Negative
+D : Something else
+<-ans-> C 
+<-question->
+Which of the following methods work both in Python lists and Python tuples?
+A : sort()
+B : reverse()
+C : append()
+D : index()
+E : pop()
+<-ans-> D 
+<-question->
+Which of the following Python data structures is most similar to the value returned in this line of Python:
+
+x = urllib.request.urlopen('http://data.pr4e.org/romeo.txt')
+A : file handle
+B : regular expression
+C : socket
+D : dictionary
+E : list
+<-ans-> A 
+<-question->
+Which of the following Python statements would print out the length of a list stored in the variable data?
+A : print(len(data))
+B : print(data.length())
+C : print(data.Len)
+D : print(data.length)
+E : print(length(data))
+F : print(strlen(data))
+<-ans-> A 
+<-question->
+Which of the following regular expressions would extract the URL from this line of HTML:
+
+<p>Please click <a href="http://www.dr-chuck.com">here</a></p>
+A : href="(.+)"
+B : href=".+"
+C : http://.*
+D : <.*>
+<-ans-> A 
+<-question->
+Which of the following slicing operations will produce the list [12, 3]?
+
+t = [9, 41, 12, 3, 74, 15]
+A : t[12:3]
+B : t[2:4]
+C : t[2:2]
+D : t[1:3]
+E : t[:]
+<-ans-> B 
+<-question->
+Which of the following string methods removes whitespace from both the beginning and end of a string?
+A : split()
+B : wsrem()
+C : strtrunc()
+D : strip()
+<-ans-> D 
+<-question->
+Which of the following TCP sockets is most commonly used for the web protocol (HTTP)?
+A : 119
+B : 25
+C : 23
+D : 22
+E : 80
+<-ans-> E 
+<-question->
+Which of the following tuples is greater than x in the following Python sequence?
+
+x = (5, 1, 3)
+if ??? > x :
+ ...
+A : (4, 100, 200)
+B : (5, 0, 300)
+C : (0, 1000, 2000)
+D : (6, 0, 0)
+<-ans-> D 
+<-question->
+Which of the following variables is the "most mnemonic"?
+A : hours
+B : x1q3z9ocd
+C : variable_173
+D : x
+<-ans-> A 
+<-question->
+Which of the parts of a computer actually executes the program instructions?
+A : Secondary Memory
+B : Input/Output Devices
+C : Central Processing Unit
+D : Main Memory
+<-ans-> C 
+<-question->
+Which of these is the right syntax to make a new table?
+A : CREATE people;
+B : CREATE TABLE people;
+C : MAKE DATASET people;
+D : MAKE people;
+<-ans-> B 
+<-question->
+Which of these operators is not a comparison / logical operator?
+A : >=
+B : !=
+C : <
+D : =
+E : ==
+<-ans-> D 
+<-question->
+Which of these statements is used to indicate that class A will inherit all the features of class B?
+A : class A(B) :
+B : class A instanceOf B :
+C : class A inherits B :
+D : A=B++;
+E : class A extends B :
+<-ans-> A 
+<-question->
+Which of these two web service approaches is preferred in most modern service-oriented applications?
+A : SOAP - Simple Object Access Protocol
+B : REST - Representational state transfer
+<-ans-> B 
+<-question->
+Which of these words are reserved words in Python ?
+A : if
+B : machine
+C : todo
+D : concat
+E : break
+F : for
+G : names
+H : pizza
+I : payroll
+K: while
+<-ans-> AEFK 
+<-question->
+Which organization publishes Internet Protocol Standards?
+A : SIFA
+B : SCORM
+C : IMS
+D : LDAP
+E : IETF
+<-ans-> E 
+<-question->
+Which programming language serves as the basis for the JSON syntax?
+A : SCALA
+B : JavaScript
+C : PHP
+D : Python
+E : Java
+<-ans-> B 
+<-question->
+Which reserved word indicates the start of an "indefinite" loop in Python?
+A : while
+B : indef
+C : def
+D : break
+E : for
+<-ans-> A 
+<-question->
+Which SQL command is used to insert a new row into a table?
+A : INSERT ROW
+B : INSERT AFTER
+C : INSERT INTO
+D : ADD ROW
+<-ans-> C 
+<-question->
+Who is credited with getting the JSON movement started?
+A : Mitchell Baker
+B : Douglas Crockford
+C : Pooja Sankar
+D : Bjarne Stroustrup
+<-ans-> B 
+<-question->
+Who is credited with the REST approach to web services?
+A : Bjarne Stroustrup
+B : Roy Fielding
+C : Daphne Koller
+D : Leonard Klienrock
+E : Vint Cerf
+<-ans-> B 
+<-question->
+You look at the following text:
+
+if x == 6 :
+ print('Is 6')
+ print('Is Still 6')
+ print('Third 6')
+
+It looks perfect but Python is giving you an 'Indentation Error' on the second print statement. What is the most likely reason?
+A : You have mixed tabs and spaces in the file
+B : Python has reached its limit on the largest Python program that can be run
+C : In order to make humans feel inadequate, Python randomly emits 'Indentation Errors' on perfectly good code - after about an hour the error will just go away without any changes to your program
+D : Python thinks 'Still' is a mis-spelled word in the string
+<-ans-> A 
+<-question->
