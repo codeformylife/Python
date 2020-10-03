@@ -1,0 +1,11 @@
+name    quality price
+item1	19		1000
+item2	9		2000
+item3	1		300
+item4	8		6000
+item5	9		9000
+item6	6		500
+item7	3		8000
+item8	4		80
+item9	12		40
+item10	11		8000
